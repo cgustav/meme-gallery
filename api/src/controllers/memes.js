@@ -1,6 +1,7 @@
 // controllers/memesController.js
 const db = require("../db");
 
+
 // Obtener todos los memes
 exports.getAllMemes = (req, res) => {
   const query = "SELECT * FROM memes";

@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const memesRoutes = require("./src/routes/memes");
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
+const cors = require("cors");
 const config = require("./config");
 
 const app = express();
@@ -31,6 +32,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // Middleware
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
