@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
+
+import { Bebas_Neue } from "next/font/google";
+
 import Image from "next/image";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Skeleton } from "@/components/ui/skeleton";
+} from "../components/ui/dialog";
+import { ScrollArea } from "../components/ui/scroll-area";
+import { Skeleton } from "../components/ui/skeleton";
 import { ArrowUp, ArrowDown, Share2, MoreHorizontal } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Bebas_Neue } from "next/font/google";
+import { Button } from "../components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",

@@ -3,18 +3,23 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowUp, ArrowDown, Share2, PlusCircle } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import { Button } from "../components/ui/button";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Toaster } from "@/components/ui/toaster";
-import { useToast } from "@/components/ui/use-toast";
-import { Skeleton } from "@/components/ui/skeleton";
+} from "../components/ui/select";
+import { Toaster } from "../components/ui/toaster";
+import { useToast } from "../components/ui/use-toast";
+import { Skeleton } from "../components/ui/skeleton";
 import MemeModal from "./MemeModal";
 import CreateMemeModal from "./CreateMemeModal";
 import { Bebas_Neue } from "next/font/google";
