@@ -6,7 +6,7 @@ const connectionConfig = {
   user: config.DB_USER,
   password: config.DB_PASSWORD,
   database: config.DB_NAME,
-  ssl: true,
+  // ssl: true,
 };
 
 console.log("Connection Config: ", connectionConfig);
