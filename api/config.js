@@ -11,7 +11,7 @@ class Config {
 
     Config.instance = this;
 
-    this.PORT = process.env.PORT || 3000;
+    this.PORT = process.env.PORT || 3001;
     this.DB_HOST = process.env.DB_HOST || "localhost";
     this.DB_USER = process.env.DB_USER || "user";
     this.DB_PASSWORD = process.env.DB_PASSWORD || "password";
